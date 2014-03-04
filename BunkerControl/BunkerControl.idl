@@ -1,0 +1,29 @@
+// BunkerControl.idl : type library source for BunkerControl.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (BunkerControl.tlb).
+
+[ uuid(DEA0A2C8-B7D2-4BB0-A6D8-A02F1F806A34), version(1.0) ]
+library BunkerControl
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  Primary dispatch interface for CBunkerControlDoc
+	
+	[ uuid(42EF40B4-0421-4B8A-97E0-DF2B4C89AA21) ]
+	dispinterface IBunkerControl
+	{
+		properties:
+			
+		methods:
+	};
+
+	//  Class information for CBunkerControlDoc
+	
+	[ uuid(1EFC2765-FF42-46D2-AAC2-BD465DD34AB0) ]
+	coclass CBunkerControlDoc
+	{
+		[default] dispinterface IBunkerControl;
+	};
+};
